@@ -69,12 +69,20 @@ class LeitorSinalizacao:
             print(f"\nRegistro {i}:")
             print(f"  Descrição: {registro[1]}")
             print(f"  Estado: {registro[2]}")
+            print(f"  Estado: {registro[3]}")
             print(f"  Data Implantação: {registro[4]}")
             print(f"  Logradouro: {registro[5]}")
+            print(f"  Numero Inicial: {registro[6]}")
+            print(f"  Numero Final: {registro[7]}")
+            print(f"  De Fronte: {registro[8]}")
+            print(f"  Cruzamento: {registro[9]}")
+            print(f"  Lado: {registro[10]}")
+            print(f"  Fluxo: {registro[11]}")
+            print(f"  Local de instalação: {registro[12]}")
             print(f"  Latitude: {registro[13]}")
             print(f"  Longitude: {registro[14]}")
         
-        if limite and len(self.ausente) > limite:
+        if limite and len(self.ausente) < limite:
             print(f"\n... e mais {len(self.ausente) - limite} registros")
         
         print("\n" + "=" * 80)
