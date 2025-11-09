@@ -17,5 +17,5 @@ for line in f:
     antiga = lista[4]
   print(lista)
 
-
-print (antiga)
+##Sinalliza a data mais antiga no arquivo
+print(f"Data da primeira implementacao: {antiga}")
