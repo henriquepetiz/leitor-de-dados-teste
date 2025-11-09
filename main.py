@@ -1,5 +1,6 @@
 ####leitor de dados pequenos
-
+class sings:
+  def __init__
 
 
 f = open("sinalizacao.csv")
