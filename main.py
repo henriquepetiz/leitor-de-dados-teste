@@ -7,10 +7,15 @@ f = open("sinalizacao.csv")
 ###identificar data mais antiga
 
 antiga = ''
+primeira = True
 for line in f:
-  campos = line.strip().split(';')
-  if len(campos) > 4 and campos[4]:
-    if antiga == '' or antiga > campos[4]:
-      antiga = campos[4]
+  if primeira:
+    primeira = False
+    continue
+  lista = line.strip().split(';')   ###cria lista 
+  if antiga == '' or antiga > lista[4]:
+    antiga = lista[4]
+  print(lista)
+
 
 print (antiga)
