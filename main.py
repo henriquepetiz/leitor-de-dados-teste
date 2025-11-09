@@ -1,4 +1,4 @@
-
+####leitor de dados pequenos
 
 f = open("sinalizacao.csv")
 
